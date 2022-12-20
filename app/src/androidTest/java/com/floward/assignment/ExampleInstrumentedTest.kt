@@ -1,4 +1,4 @@
-package com.betsson.flowardassignment
+package com.floward.assignment
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

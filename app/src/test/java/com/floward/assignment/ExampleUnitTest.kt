@@ -1,4 +1,4 @@
-package com.betsson.flowardassignment
+package com.floward.assignment
 
 import org.junit.Test
 
