@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "FlowardAssignment"
+rootProject.name = "Assignment"
 include ':app'
