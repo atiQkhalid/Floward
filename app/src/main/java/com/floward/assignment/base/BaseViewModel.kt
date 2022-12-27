@@ -2,6 +2,8 @@ package com.floward.assignment.base
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModel
+import com.floward.assignment.repository.ItemRepository
+import org.koin.java.KoinJavaComponent
 
 /**
  * BaseViewModel.kt
@@ -11,9 +13,8 @@ abstract class BaseViewModel<View> : ViewModel() {
     private var view: View? = null
     private var lifecycleOwner: LifecycleOwner? = null
 
-//    protected val newsRepository: Repository by inject(
-//        Repository::class.java
-//    )
+    protected val itemRepository: ItemRepository by KoinJavaComponent.inject(
+        ItemRepository::class.java)
 
     /**
      * This method must be called by the UI to attach navigation to be monitored by the substituted view model to respond to UI specific event changes.

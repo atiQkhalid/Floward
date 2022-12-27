@@ -2,6 +2,7 @@ package com.floward.assignment.di
 
 import android.content.Context
 import com.floward.assignment.prefences.PrefManager
+import com.floward.assignment.repository.ItemRepository
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.dsl.module
@@ -17,6 +18,7 @@ object DIFramework {
         val repoModule = module {
             //  Pref Manger
             single { PrefManager.getInstance() }
+            single { ItemRepository.getInstance() }
         }
 
         // start Koin!

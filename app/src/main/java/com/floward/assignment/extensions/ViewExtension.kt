@@ -1,10 +1,11 @@
 package com.floward.assignment.extensions
 
-import android.content.Context
 import android.view.View
-import android.view.inputmethod.InputMethodManager
+import android.widget.ImageView
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.floward.assignment.App
+import com.floward.assignment.R
 
 /**
  * Extension function to show toast message
@@ -28,10 +29,9 @@ fun View.gone() {
 }
 
 /**
- * An Extension to close keyboard.
+ * An Extension to LoadImage
+ * @return void
  */
-fun View.closeKeyboard() {
-    val inputMethodManager =
-        this.context?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-    inputMethodManager.hideSoftInputFromWindow(this.windowToken, 0)
+fun ImageView.loadImage(url: String?) {
+    Glide.with(this).load(url).placeholder(R.drawable.ic_launcher_background).into(this)
 }
