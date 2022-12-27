@@ -5,5 +5,6 @@ data class UsersResponseItem(
     val name: String,
     val thumbnailUrl: String,
     val url: String,
-    val userId: Int
+    val userId: Int,
+    var postCount: Int
 )

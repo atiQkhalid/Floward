@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_UserItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/item_margin"
+    android:layout_marginTop="@dimen/item_margin"
+    android:background="@drawable/rounded_corners">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/civ_user"
+        android:layout_width="@dimen/userIconSize"
+        android:layout_height="@dimen/userIconSize"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/user_image"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/userNameSize"
+        app:layout_constraintStart_toEndOf="@+id/civ_user"
+        android:paddingTop="@dimen/paddingTopText"
+        android:textStyle="bold"
+        android:text="@string/testing_text"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_postCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/testing_text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/civ_user"
+        app:layout_constraintTop_toBottomOf="@id/tv_userName"
+        android:paddingTop="@dimen/paddingTopText"
+        android:paddingStart="@dimen/paddingTopText"
+        android:textSize="@dimen/postCountSize"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/iv_arrowForward"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow_forward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.floward.assignment.databinding.ActivityMainBinding
 import com.floward.assignment.extensions.replaceFragmentSafely
-import com.floward.assignment.ui.fragments.HomeFragment
+import com.floward.assignment.ui.fragments.users.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
