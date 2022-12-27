@@ -1,18 +1,17 @@
 # Assignment
-This is simple app which had two fragments one is based on a list of users and by clicking a user it opens second fragment which shows posts created by user
+This is simple app which had two fragments one is based on a list of users 
+Count of posts created by user and by clicking a user it opens second fragment which shows posts by user
 
 # Architecture
-MVVM with repository
+MVVM with repository layer
 
 # Libraries
 - Retrofit (Network Json Conversion)
 - Koin (dependency injection)
 - live data with lifecycle
 - recyclerview (List up the data)
-- kprogresshud (Progress dialogue)
-
-# Features
-
+- custom progress dialogue (Progress dialogue)
+- glide for loading message
 
 # Requirements
 Android Studio Latest Version Android min Sdk Version 21
