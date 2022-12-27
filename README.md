@@ -1,6 +1,6 @@
 # Assignment
-This is simple app which had two fragments one is based on a list of users 
-Count of posts created by user and by clicking a user it opens second fragment which shows posts by user
+This is simple app which has two fragments one is based on a list of users and count of posts created by user
+and by clicking a user it opens second fragment which shows posts by user
 
 # Architecture
 MVVM with repository layer
