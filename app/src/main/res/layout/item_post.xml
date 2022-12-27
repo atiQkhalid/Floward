@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_PostItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/item_margin"
+    android:layout_marginTop="@dimen/item_margin"
+    android:background="@drawable/rounded_corners">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/userNameSize"
+        android:paddingTop="@dimen/paddingTopText"
+        android:textStyle="bold"
+        android:text="@string/testing_text"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/testing_text"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:paddingTop="@dimen/paddingTopText"
+        android:paddingStart="@dimen/paddingTopText"
+        android:textSize="@dimen/postCountSize"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
