@@ -1,5 +1,6 @@
 package com.floward.assignment.network
 
+import com.floward.assignment.utils.Const.BASE_URL
 import com.floward.assignment.utils.Const.REQUEST_TIMEOUT
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -15,7 +16,7 @@ object RetrofitClient {
 
     private var okHttpClient: OkHttpClient? = null
 
-    fun getInterfaceService(baseUrl: String): ApiInterface {
+    fun getInterfaceService(baseUrl: String = BASE_URL): ApiInterface {
 
         initOkHttp()
 
